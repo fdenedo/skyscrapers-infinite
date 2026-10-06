@@ -1,0 +1,10 @@
+{
+  "include": ["src"],               // this is where I am planning on putting the ts files
+  "compilerOptions": {
+    "module": "esnext",             // setting the module system to esnext for modern bundled code, leave imports and exports as written
+    "noEmit": true,                 // can do this now as using Vite, this just checks types for us
+    "strict": true,                 // explicit strong ts checks
+    "moduleResolution": "bundler",  // copy Vite's rules for finding files (e.g. no need to add extensions to relative imports)
+    "verbatimModuleSyntax": true,   // imports and exports marked `type` are erased, and everything else stays as written, so Vite compiling one file alone gets the same result as tsc
+  }
+}

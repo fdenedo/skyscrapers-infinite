@@ -1,0 +1,23 @@
+{
+  "name": "skyscrapers",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "engines": {
+    "node": ">=26"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3",
+    "vitest": "^5.0.3"
+  }
+}
