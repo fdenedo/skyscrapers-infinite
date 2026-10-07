@@ -6,5 +6,6 @@
     "strict": true,                 // explicit strong ts checks
     "moduleResolution": "bundler",  // copy Vite's rules for finding files (e.g. no need to add extensions to relative imports)
     "verbatimModuleSyntax": true,   // imports and exports marked `type` are erased, and everything else stays as written, so Vite compiling one file alone gets the same result as tsc
+    "target": "es6"                 // setting this to make sure whenever TypeScript reads these files, it knows what built-ins exist (e.g. `toReversed()`, `Number.isInteger()`)
   }
 }

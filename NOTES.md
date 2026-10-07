@@ -12,8 +12,8 @@ The visibility counter is the code that counts how many skyscrapers can be seen 
 
 Note: I'm adding the length constraint as it allows us to do some fast-exit shenanigans, even though for sequential array lookups it will likely give little time back, but could be useful when performing many checks, like for the solver, might be worth instrumenting
 
-```
-const countVisible = (readonly line: Array<number>) => number
+```typescript
+const countVisible = (line: readonly Array<number>) => number
 ```
 
 Where:
